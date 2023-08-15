@@ -13,5 +13,5 @@ Each page within the reading log has its own instructions for usage. In this rea
 (7) Pages with a "Reference" button can be clicked to access the web pages I used as references.<br><br>
 (8) Never mind if you cannot remember all these instructions; I have written all of them on the website.<br><br>
 
-![Example Screenshot](https://imgur.com/a/fGUbX3x)
+![Example Screenshot]([https://imgur.com/a/fGUbX3x](https://imgur.com/Fr7g7pn)https://imgur.com/Fr7g7pn)
 
