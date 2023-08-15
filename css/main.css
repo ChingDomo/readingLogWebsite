@@ -1,0 +1,63 @@
+.header-text {
+    color: white;
+    text-shadow: 0 0 12px #000000;
+}
+
+.image-bg-header {
+    text-align: center;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-top: 0;  */
+    /* margin-top: -70px; */
+    /* 根据实际情况进行调整 */
+    background: url('../images/butterfly.jpg') no-repeat center center scroll;
+    height: 300px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    margin-top: 50px;
+}
+
+.text-center {
+    margin-bottom: 0;
+}
+
+#quote {
+    display: block;
+    border-left: 5px solid gray;
+    padding-left: 20px;
+}
+
+#description {
+    color: gray;
+    padding-left: 20px;
+}
+
+
+.first_word {
+    display: inline;
+}
+
+.first_paragraph {
+    margin-bottom: 16px;
+}
+
+#Sep-front {
+    background-color: rgba(114, 113, 113, 0.365);
+}
+
+#Sep-back {
+    background-color: rgba(47, 47, 47, 0.66);
+}
+
+#Oct-front {
+    background-color: rgba(85, 44, 219, 0.562);
+}
+
+#Oct-back {
+    background-color: rgba(9, 9, 48, 0.603);
+}

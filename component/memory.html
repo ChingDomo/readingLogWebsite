@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Clean Blog - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200&display=swap" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+    <style>
+        .flip-card {
+            perspective: 1000px;
+            cursor: pointer;
+            height: 300px;
+            border: solid #8194a1;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card-front {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+
+            color: #212529;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            opacity: 1;
+            transition: opacity 0.6s;
+
+            border-radius: 10px;
+            margin: 30;
+        }
+
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+
+            color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            transform: rotateY(180deg);
+
+            border-radius: 10px;
+            margin: 30;
+        }
+
+        .flipped .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flipped .flip-card-front {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Still Alice</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="./information.html">Information</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4"
+                            href="./reflection.html">Reflection</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="./summaries.html">Summaries</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="./volcabulary.html">Glossary</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="./memory.html">Quotes</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="./culture.html">Culture
+                            Notes</a>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header-->
+    <header class="masthead" style="background-image: url('../assets/img/quote-bg.jpeg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <h1>Memory Quotes</h1>
+                        <h2 class="subheading">Memory Quotes for all chapters of Still Alice.</h2>
+                        <span class="meta">
+                            Touch
+                            the <span class="text-info">quote card</span> to see my reflection.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content-->
+    <div class="container">
+        <!-- January 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    September 2003</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">"I don't want you to
+                                        become me, Lydia"
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">I just don't you to
+                                        limit your choice.(p.18)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                <h5 class="card-title">
+                                    Alice其實曾經很好地跟Lydia說過，但所有人陷在情緒中都難以說清，這讓我想到我和我的媽媽也曾因為大學的選擇吵架。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    September 2003</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">With his breath on her
+                                        neck, she fell into a deep sleep, convinced that she was safe.(p.30)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h5 class="card-title" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                    Alice很依賴John，雖然在書中充滿了遺憾，但我一直認為從種種描述可以看出他們是很相愛的伴侶。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- January 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    October 2003</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">It had been an ardous
+                                        journey to tenured full relationship for Alice, not because the responsibilities
+                                        became too daunting or because she didn't produce an outstanding body of work in
+                                        linguistics along the way, but essentially bacause hshe was a woman who had
+                                        children.(p.36)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                <h5 class="card-title">
+                                    這裡讓我感慨很深，女性在職場上得到的成就與女性的能力永遠不成正比，我其實不知道婚姻給女性帶來的除了不幸還有什麼。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    October 2003</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">They were both
+                                        competitive and fiercely independent, but Anna wasn't a risk taker.(p.39)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h5 class="card-title" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                    Anna對Lydia的看法讓我想起我的姐姐，我們跟書中的姊妹有著幾乎完全一樣的特質，她不是個risk
+                                    taker會選擇家裡要她走得最完善的路，我一直難以評斷，但我想我也該像Lydia一樣相信自己
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- January 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    November 2003</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;"> He mind raced
+                                        straight to her children.
+                                    </h4>
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;"> She stood frozen in
+                                        the doorway, barced for horrible news.(p.55)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                <h5 class="card-title">
+                                    我覺得這裡寫得很好，用brace for這個詞更是呈現出了Alice的慌張與對自己狀況的初步不可控
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    November 2003</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">Alice appreciated the
+                                        glorious advantages available to those fortunate enough to regularly observe the
+                                        live version of this landscape.(p.50)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h5 class="card-title" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                    我認同Alice的想法。波士頓有全球數一數二的大學們，我的偶像也在那裏讀書，我一直很希望自己能夠去波士頓讀研究所，所有可以每天看風景的人都已經是領域的佼佼者了
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- January 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    December 2003</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;"> They supported one
+                                        anothr through slumps of negative data and grant rehection, through waves of
+                                        crippling self-doubt, through illness and divorce.(p.57)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                <h5 class="card-title">
+                                    Alice和同事們的關係就像我和大學同學，一起寫project的情誼總是非常深厚，我雖然知道，還是不希望她失去他們
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    December 2003</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">"Mom, how many eggs do
+                                        I need>"
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h5 class="card-title" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                    點睛之筆，我認為也側面說明了Lydia看出什麼
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- 2004 -->
+        <!-- January 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    January 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">Well, Dad, are you
+                                        happy?
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">I've got your DNA.
+                                        You're going to get to kill us all.</h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;"> How does it feel to
+                                        murder your entire family?</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                <h5 class="card-title">
+                                    Alice的這段話觸動到了我，我的父親在兩年前發現帕金森氏症，又在生小孩前就得到了糖尿病，我的姐姐會認為，帶著這樣父輩給的不健康的身體，活在世界上得比其他人更小心謹慎，而一直很怨恨我爸。但是要如何去應對這些基因帶來的疾病，我不想帶著毀滅性的基因出生，卻很難將基因不完好這種事情責怪父母。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    January 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">Without looking at
+                                        her, he got up and went straight into the study, leaving her alone on the couch,
+                                        hugging her knees, feeling like she needed to throw up.(p.93)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h5 class="card-title" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                    Alice對於阿茲海默最大的痛苦來自於自我認同，那些在病程進展中喪失的自我，讓她感到自己越來越不像是Alice，而John就是她最希望能夠得到的救贖。但是我也能理解John的作法，他需要時間來接受Alice生病的現實，這在另一方面也對他打擊巨大。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <!-- Febuary 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    Febuary 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">“He was blind drunk,
+                                        every day.
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">He died of cirrhosis,
+                                        not
+                                        Alzheimer’s,” said John(p.97)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                <h5 class="card-title">
+                                    John其實是很不願意Alice有阿茲海默的，這裡的極力否認就是為了撇清Alice家人具有這個疾病的可能性。John在這裡的激動與插話，比起跟醫生說話，其實更像是在說服自己。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    Febuary 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">She sat in the
+                                        passenger seat and waited for John to say something.
+                                    </h4>
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">But he didn't. He
+                                        cried the
+                                        whole way home.(p.102)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h5 class="card-title" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                    這裡體現了John的心情。Alice生病從來就不是她一個人的事，John在承受陪伴的壓力的同時，也必須面對他即將失去"Alice"的宿命。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <!-- March 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    March 2004</h3>
+                                <div style="margin-top:30px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">“I'm so sorry I have
+                                        this.
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">I can't stand the
+                                        thought of how much worse this is going to get.</h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">I can't stand the
+                                        thought of looking at you someday, this face I love, and not knowing who you
+                                        are.(p.114)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                <h5 class="card-title">
+                                    Alice在這裡坦白了她對於阿茲海默最大的恐懼，她害怕失去自己，更害怕失去自己愛的人。失去記憶的同時，相當於她會忘記她愛的生活。Alice的掙扎讓我感到無奈又諷刺，她曾經擁有絕佳的記憶力，最後卻因為記憶受苦。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    March 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">She felt like a fraud,
+                                        posing as a Harvard professor without a progressive neurodegenerative diseasem
+                                        working every day as if everything were just fine and would continue that
+                                        way.(p.110)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h5 class="card-title" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                    對於疾病任何人都無可奈何。Alice一直想要抓住她所在乎的一切，哈佛教授的工作、僅僅這樣平凡的生活就已經是她最大的願望，但這必不會持續下去，她也無法假裝一切都好，這或許就是生命的無奈。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <!-- April 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    April 2004</h3>
+                                <div style="margin-top:30px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">“I don't want to
+                                        know."
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">Lydia always did things
+                                        differently.(p.122)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                <h5 class="card-title">
+                                    不得不說Lydia是全書中我最喜歡的角色。在這場晚餐中Howland家的每個人都想著自己，Anna甚至直接對Alice說出惡劣的話，只有Lydia會顧及Alice的感受。
+                                </h5>
+                                <h5 class="card-title">Lydia不是Alice最成功的孩子，也不是跟Alice關係最好的孩子，但Lydia一定是最愛Alice的孩子</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    Apirl 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">After Tom was born,
+                                        Alice remembered feeling so blessed, that she had the ideal----one of each.
+                                    </h4>
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">It took twenty-six
+                                        years foe that blessing to deform into a curse.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h5 class="card-title" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                    我覺得這段寫得非常有意思，用祝福與詛咒的比喻來轉換Alice的心情。"each"表現了兩個孩子有所不同，祝福時是性別，詛咒時就變成了是否有阿茲海默而依然成立。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <!-- May 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    May 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">She ate her last bite
+                                        of cone.
+                                        <h4 class="card-title" style="font-family: 'Cinzel', serif;">She wanted more
+                                            sunny, seventy-degress days and ice-cream cones.</h4>
+                                        <h4 class="card-title" style="font-family: 'Cinzel', serif;"> And when the
+                                            burden of her disease exceeded the pleasure of that ice cream, she wanted to
+                                            die.(p.137)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                <h5 class="card-title">
+                                    這段探討的心情很嚴肅，卻讓我在看的時候笑出來。面對絕望的Alice就像面對期末的我，不論一開始多注重飲食與健康，運動、不吃垃圾食物、穿搭，每學期到最後都會重蹈一樣的覆轍，泡麵配短褲，因為課業帶來的壓力已經情緒性地尋求食物帶來的快樂了
+                                </h5>
+                                <!-- <h5 class="card-title">Lydia不是Alice最成功的孩子，也不是跟Alice關係最好的孩子，但Lydia一定是最愛Alice的孩子</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    May 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">She didn't belong
+                                        here.(p.133)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h5 class="card-title" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                    Alice一直都是一個擁有自己驕傲的人，她曾經擁有過人的記憶力與哈佛的工作，她比任何人都有能力選擇想要的生活。所以Alice會感到抗拒，抗拒自己變得不再是那個驕傲的Alice、抗拒失去她所有的品質，也抗拒去承認自己有天也會變得癡傻得像center中的人一樣。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <!-- June 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    June 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">Mostly I lie there and
+                                        worry.
+                                        <h4 class="card-title" style="font-family: 'Cinzel', serif;">I know this is
+                                            going to get a lot worse, but I don't know when, and I worry that I might go
+                                            to sleep and wake up the next mornin and not know where I am or who I am or
+                                            what I do.(p.143)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                <h5 class="card-title">
+                                    我在這裡才真的覺得自己開始進入Alice的狀態，面對死亡或是毀滅性的疾病，對我這個年紀來說好像很遙遠，但是忘記自己是誰、忘記自己在哪裡、忘記自己要幹嘛變得非常具象，Alice面對著疾病帶來的未知，所以感到痛苦。
+                                </h5>
+                                <!-- <h5 class="card-title">Lydia不是Alice最成功的孩子，也不是跟Alice關係最好的孩子，但Lydia一定是最愛Alice的孩子</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    June 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">This doesn't concern
+                                        my husband.
+                                    </h4>
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">I'm not depressed and
+                                        I'm not desperate.
+                                    </h4>
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">I'm aware of what I'm
+                                        asking for, Tamara.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h5 class="card-title" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                    Alice與醫生的對話很曲折，都是在測試著彼此，這裡Alice直接攤牌，卻顯得終止漫長的拖沓，看得出Alice放棄成人世界溝通的一面，她對於自己的堅持與對阿茲海默的厭惡已經超越了理智，有種破罐子破摔的感受。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <!-- July 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    July 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h5 class=" card-title" style="font-family: 'Cinzel', serif;">Her thoughts then rode
+                                        a series of waves, traveling from unwanted jewerly to her mother's butterfly
+                                        necklace, traversin from there to her plan for suicide, to the books she planed
+                                        to read, and finally stranded themselves on the common fates of Virgiia Woolf
+                                        and Edna Pontellier.(p.168-169)</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                <h5 class="card-title">
+                                    這一段寫得非常美麗，把阿茲海默間斷的思緒化作海浪，具象化Alice一波一波的思維，再用書籍人物來婉轉敘述"自殺"或是水中溺死的意象
+                                </h5>
+                                <!-- <h5 class="card-title">Lydia不是Alice最成功的孩子，也不是跟Alice關係最好的孩子，但Lydia一定是最愛Alice的孩子</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    July 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">"Don't look at
+                                        me!"
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h5 class="card-title" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                    Alice最不想發生的是最後還是發生，她失去記憶的同時也在失去一部分的自我，不希望任何人看到失禁的自己，卻被John目睹，我認為這是全書的高潮。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <!-- August 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    August 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">"She's not lazy."said
+                                        Lydia.(p.199)</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                <h5 class="card-title">
+                                    我依然很喜歡Lydia，這裡也體現了在三個孩子中，只有Lydia記得也最在乎Alice原本的樣子，她不是懶惰、她只是生病。
+                                </h5>
+                                <!-- <h5 class="card-title">Lydia不是Alice最成功的孩子，也不是跟Alice關係最好的孩子，但Lydia一定是最愛Alice的孩子</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    August 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h5 class=" card-title" style="font-family: 'Cinzel', serif;">The question seemed to
+                                        make her sad as she considered it. Her eyes welled with tears.
+                                    </h5>
+                                    <h5 class=" card-title" style="font-family: 'Cinzel', serif;">"Yes, I'm moving back
+                                        to L.A. at the end of Augustm but I'll be back this way a lot to visit with my
+                                        family."
+                                    </h5>
+                                    <h5 class=" card-title" style="font-family: 'Cinzel', serif;">"Mom, that's Lydia,
+                                        your daughter,"said Anna.
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h5 class="card-title" style="margin:30px; font-family: 'Noto Serif HK', serif;">
+                                    我覺得這段很drama，忘記了自己的女兒，後面的承接也做得很好，因為從這次開始Alice的描述漸漸地不是名字，而是一些細小的特徵、像在觀察陌生人。
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <!-- Septembr 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    September 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">Now she'd heard
+                                        enough.
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">I can't live with a
+                                        reputation of being a
+                                        depressed, stressed-out addict.</h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;"> Having dementia
+                                        has to
+                                        carry less of a stigma than that.(p.220)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">Alice對於成癮是有傷痕的，這段帶給我的感受就是父輩為她留下的傷口無法癒合，成為一輩子都不願意成為的事</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    Septembr 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">She wished she'd
+                                        been
+                                        his
+                                        passion.(p.219)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">Alice一直很愛John，她一直想要和John待在一起，所以希望能keep她的品質，失去愛的痛苦比一切更能觸動到人</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <!-- October 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    October 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">She felt bored,
+                                        ignored, and alienated in her office.
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">She felt ridiculous
+                                        there.</h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;"> She didn't belong
+                                        there anymore(p.229)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">
+                                    失去工作後，Alice的生活也變得無聊，這裡我可以理解她失去了太多她所愛的事，她不在屬於辦公室的同時，她也認為自己不在屬於"Alice"</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    October 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">Don't forget about you
+                                        and Charlie.
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">Keep what you have with
+                                        him.
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">Keep everything in
+                                        balance----you and Charlie, your career, your kids, everything you love.(p.234)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">這裡在說的其實也是Alice自己的願望，她希望和John和從前一樣、希望一切都和她所愛的一樣，所以她做了所有努力</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <!-- November 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    November 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class=" card-title" style="font-family: 'Cinzel', serif;">What about support for
+                                        the people with Alzheimer's disease?
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">Where are the other
+                                        fifty-one-years-olds with dementia?(p.241)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">
+                                    Alice不再屬於任何團體，她需要一個歸屬感與讓她感到支柱的地方，否則失去安全網後，她沒有辦法去處理她的不安</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    November 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">"Leave me alone! Get
+                                        out of my house! I hate you! I don't you here!"(p.244)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">
+                                    我選擇這句是因為我的外婆也有阿茲海默症，她也跟我媽媽說過一樣的話，病況到最後情緒也會受到影響，尤其是孤獨與煩躁一起湧上，我可以理解Alice</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- December 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    December 2004</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">They'll be relieved
+                                        that
+                                        I'm not there.</h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">I am a cotton candy
+                                        pink
+                                        elephant in the room.</h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">I make everyone
+                                        uncomfortable.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">Alice不再認為自己可以跟以前的朋友待在一起，她發現了自己失去的東西太多，過去的一切也就隨之離開，這裡令人痛苦又悲傷</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    December 2004</h3>
+                                <div style="margin-top:15px">
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">They nodded and
+                                        laughed
+                                        abd
+                                        cried over stories of lost keys, lost thoughts, and lost life dreams.
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">Alixe felt unedited
+                                        and
+                                        truly heard.
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">She felt normal.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">但同樣地，Alice會選擇在別的地方找到團體。我看到這裡很欣慰，也真心希望她可以找到一個安全網。</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- December 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    January 2005</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">"Alice, the choice for
+                                        me isn;t 'take the position at Sloan' or 'task a sabbatical year'</h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">It's 'take the position
+                                        at Sloan' or ;continue here at Harvard'</h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">I make everyone
+                                        uncomfortable.(p.272)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">這裡展現了John的無奈。作為病人家屬他要承擔的事其實比病人更多，除了後續還有兼顧他未完成的人生。</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    January 2005</h3>
+                                <div style="margin-top:15px">
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">But what she felt was
+                                        an inconsolable grief over the death f the BlackBerry itself.(p.278)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">
+                                    我覺得在經歷一大段痛苦後，人是很難當下就表現出情緒的，Alice這裡說她難過的是BlackBerry，但其實是她的身體終於為情緒找到了抒發口。</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- December 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    Febuary 2005</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">His compliment, genuine
+                                        and not patronizing,
+                                        was just the boost her ego needed after
+                                        having been so ruthlessly pummeled by so
+                                        many tests today.(p.287)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">Dr.Davis是個可愛的人，他非常友善地對待他的病患，這本書中有兩種醫生，而Dr.Davis是我相對喜歡的那個</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    February 2005</h3>
+                                <div style="margin-top:15px">
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">You're not the one with
+                                        the disease, but you've living with it,too, by living with Alice, and it's hard
+                                        on the caregivers.(p.286)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">
+                                    這段話會讓我想到我舅媽生病時的舅舅，他沒有遭遇疾病卻做出了更大的犧牲，無論從工作上或是學業上，都放棄了自己曾經的夢想，John在書中的形象其實很堅強</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- December 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    March 2005</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">We feel like we are
+                                        neither here nor there, like some crazy Dr.Seuss character in a bizarre land.
+                                    </h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">It's a very lonely and
+                                        frustrating place to be.(p.290)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">我很喜歡三月這場演講，完全發揮體現了Alice非常會演講的特徵，這段話裡的比喻淺顯且馬上表達出了阿茲海默患者的處境，卻又不會太凝重
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    March 2005</h3>
+                                <div style="margin-top:15px">
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">My yesterdays are
+                                        disappearing, and my tomorrows are uncertain, so what do I live for?</h4>
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">I live for each day.
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">
+                                    Alice的結論比我想像的堅強很多，走過一段付出一切努力卻沒有回報，在挽回自己與自己所愛的一切的過程，Alice還能夠結論出自己的生命意義，或許就是一種relief
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- December 2004 -->
+        <div class="row" style="margin: 30px;">
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    April 2005</h3>
+                                <div style="margin-top:10px">
+                                    <h4 class="card-title" style="font-family: 'Cinzel', serif;">She was Alice Howland,
+                                        brave amd remarkable hero.(p.295)
+                                    </h4>
+                                    <!-- <h4 class="card-title" style="font-family: 'Cinzel', serif;">It's a very lonely and
+                                        frustrating place to be.(p.290)
+                                    </h4> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">
+                                    這段話非常勇敢且美麗，我認為在讀小說的過程會逐漸共情Alice，也就更希望她能夠獲得救贖，即使這看起來不可能，但轉念還是會帶給她希望，她沒有丟失過她自己，她依舊是那個hero
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- <div class="card"> -->
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" id="Sep-front">
+                            <div class="flip-card-content" style="margin:30px">
+                                <h3 class="text-muted"
+                                    style="position:absolute; margin-left:auto; top: 30px; bottom: 200px; margin-right: auto; font-family: 'Satisfy';">
+                                    April 2005</h3>
+                                <div style="margin-top:15px">
+                                    <h5 class="card-title" style="font-family: 'Cinzel', serif;">You can't make this
+                                        kind of decision based on what other people might or might not do.</h5>
+                                    <h5 class="card-title" style="font-family: 'Cinzel', serif;">This is your decision,
+                                        your education.
+                                    </h5>
+                                    <h5 class="card-title" style="font-family: 'Cinzel', serif;">You're a grown woman,
+                                        you don't have to do what your father wants
+                                    </h5>
+                                    <h5 class="card-title" style="font-family: 'Cinzel', serif;">Make it based on what's
+                                        right for your life.(p.300)</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back" id="Sep-back">
+                            <div class="flip-card-content">
+                                <h4 class="card-title">
+                                    Alice終究是愛Lydia的，在她生病後尤其明顯。她對於教育的觀感也在彼此好好溝通時能夠傳達，讓Lydia去選擇自己所愛的
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="border-top">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#!">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="small text-center text-muted fst-italic">Copyright &copy; Rosie 2023</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+        }
+    </script>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
