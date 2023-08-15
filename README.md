@@ -1,7 +1,7 @@
 # readingLogWebsite
 
 This is a website for a reading log of still Alice, created using simple HTML, CSS, and JavaScript. It can serve as a template for building static web pages.
-<br>
+<br><br>
 Each page within the reading log has its own instructions for usage. In this reading log:
 (1) Book information can be directly read.
 (2) Reflections can be directly read.
@@ -11,4 +11,4 @@ Each page within the reading log has its own instructions for usage. In this rea
 (6) The Culture Notes page is a single-page display and can be directly viewed.
 (7) Pages with a "Reference" button can be clicked to access the web pages I used as references.
 (8) Never mind if you cannot remeber all these instruction, I had wroten all of them on the website
-<br>
+<br><br>
