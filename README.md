@@ -1,6 +1,6 @@
 # readingLogWebsite
 
-This is a website for a reading log of "Still Alice," created using simple HTML, CSS, and JavaScript. It can serve as a template for building static web pages.
+This is a website for a reading log of "Still Alice," created using simple HTML, CSS, and JavaScript. It can serve as a template for building static web pages with RWD!
 <br><br>
 Each page within the reading log has its own instructions for usage. In this reading log:
 <br><br>
